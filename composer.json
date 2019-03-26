@@ -1,37 +1,29 @@
-{  
-      "name": "kedeemaul/yii2-apidoc",
-      "description": "Yii2 通过API动作方法注释，自动生成可阅读可调试的API文档",  
-      "keywords": [  
-        "yii2",
-        "apidoc",
-        "接口文档",
-        "api文档",
-        "自动生成"  
-      ],  
-      "homepage": "https://github.com/kedeemaul/yii2-apidoc",  
-      "type": "yii2-extension",  
-      "license": "MIT",  
-      "support": {  
-        "source": "https://github.com/kedeemaul/yii2-apidoc"  
-      },  
-      "authors": [  
-        {  
-          "name": "kedee",  
-          "email": "kedee@foxmail.com"  
-        }  
-      ],  
-      "minimum-stability": "stable",  
-      "require": {  
-        "php": ">=5.4.0",  
-        "yiisoft/yii2": ">=2.0.6"  
-         
-      },  
-      "autoload": {  
-        "psr-4": {  
-          "yii2docs\\apidoc\\": ""  
-        }  
-      },  
-      "config": {  
-        "process-timeout": 1800  
-      }  
+{
+  "name": "kedeemaul/yii2-apidoc",
+  "description": "Yii2 通过API动作方法注释，自动生成可阅读可调试的API文档",
+  "keywords": ["yii2", "apidoc", "接口文档", "api文档", "自动生成"],
+  "homepage": "https://github.com/kedeemaul/yii2-apidoc",
+  "type": "yii2-extension",
+  "license": "MIT",
+  "support": {
+    "source": "https://github.com/kedeemaul/yii2-apidoc"
+  },
+  "authors": [
+    {
+      "name": "kedee",
+      "email": "kedee@foxmail.com"
     }
+  ],
+  "require": {
+    "php": ">=5.4.0",
+    "yiisoft/yii2": ">=2.0.6"
+  },
+  "autoload": {
+    "psr-4": {
+      "yii2docs\\apidoc\\": ""
+    }
+  },
+  "config": {
+    "process-timeout": 1800
+  }
+}
