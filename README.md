@@ -83,18 +83,15 @@ public function actionRegGetCode($phone)
 {
 }
 ```
-![apidoc4](https://raw.githubusercontent.com/Ibunao/github-blog/master/images/yii/apidoc/apidoc4.png)  
+ 
 
 ### 示例  
-首页  
-
-![apidoc3](https://raw.githubusercontent.com/Ibunao/github-blog/master/images/yii/apidoc/apidoc3.png)  
 
 可以编辑文档说明和示例  
 
-![apidoc5](https://raw.githubusercontent.com/Ibunao/github-blog/master/images/yii/apidoc/apidoc5.png)  
+![apidoc0](https://raw.githubusercontent.com/kedeemaul/githubs/master/apidoc0.jpg) 
 
 接口调试
 
-![apidoc6](https://raw.githubusercontent.com/Ibunao/github-blog/master/images/yii/apidoc/apidoc6.png)
+![apidoc1](https://raw.githubusercontent.com/kedeemaul/githubs/master/apidoc1.jpg)
 
