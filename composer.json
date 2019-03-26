@@ -5,7 +5,7 @@
         "yii2",
         "apidoc",
         "接口文档",
-        "api文档"
+        "api文档",
         "自动生成"  
       ],  
       "homepage": "https://github.com/kedeemaul/yii2-apidoc",  
