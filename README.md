@@ -3,7 +3,7 @@ yii2 通过API动作方法的注释，自动生成可阅读可调试的API文档
 
 ### 安装  
 ```php
-composer require yii2docs/apidoc
+composer require kedeemaul/yii2-apidoc
 ```
 ### 配置  
 #### 配置到模块数组  
@@ -41,7 +41,7 @@ return [
 ];
 ```
 #### 表和静态资源  
-将静态资源放到指定位置。相关文件放在 `vendor\yii2docs\apidoc\source` 
+将静态资源放到指定位置。相关文件放在 `vendor\kedeemaul\yii2-apidoc\source` 
 2. 以配在 `backend` 项目为例，把 `css` 和 `js` 文件夹放在 `backend\web` 下  
 
 
