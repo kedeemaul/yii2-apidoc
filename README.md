@@ -27,14 +27,14 @@ config/params.php配置如下
 return [
     'apiList' => [
         [
-            'label' => '文档测试2',//文档分组名称
-            'debugHost' => 'http://localhost:801',//调试api访问域名
+            'label' => '文档测试1',//文档分组名称
+            'debugHost' => 'http://apidoc.yii2.com:802',//调试api访问域名，不配置或留空，默认为当前HOST
             'class' => 'apidoc\controllers\UserController',//class为api所在的控制器
         ],
         [
-            'label' => '文档测试',//文档分组名称
-            'debugHost' => 'http://localhost:802',//调试api访问域名
-            'class' => 'backend\controllers\ApiDocController',//class为api所在的控制器
+            'label' => '文档测试2',//文档分组名称
+            'debugHost' => 'http://admin.yii2.com:802',//调试api访问域名，不配置或留空，默认为当前HOST
+            'class' => 'backend\controllers\SystemController',//class为api所在的控制器
         ],
     ],
 ];
