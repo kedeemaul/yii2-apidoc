@@ -8,20 +8,22 @@ composer require kedeemaul/yii2-apidoc
 ### 配置  
 #### 1、配置到模块数组  
 假设我们要放到 `backend` 项目下 
-config/main.php的modules数组中加入以下内容
+config/main.php的modules数组配置如下
  
 ```php
-    'apidoc' => [
-        'class' => 'yii2docs\apidoc\Module',
-        # 配置访问接口的host
-        'debugHost' => 'http://api.yiidoc.com',
-        # 和配置时定义的模块名一致
-        'moduleName' => 'apidoc',
+'modules' => [
+        'apidoc' => [
+            'class' => 'yii2docs\apidoc\Module',
+            # 配置访问接口的host  通常配置 frontend 项目的域名
+            'debugHost' => 'http://localhost:801',
+            # 和配置时定义的模块名一致
+            'moduleName' => 'apidoc',
+        ]
     ]
 ```
 <!-- more -->
 #### 2、配置需要接口文档的控制器    
-config/params.php加入以下内容
+config/params.php配置如下
 
 ```php
 return [
@@ -37,7 +39,7 @@ return [
 	],
 ];
 ```
-
+其中class为api所在的控制器
 
 
 ### 生成文档的备注格式   
@@ -82,7 +84,7 @@ public function actionRegGetCode($phone)
 
 ### 示例  
 
-可以编辑文档说明和示例  
+文档说明和示例  
 
 ![apidoc0](https://raw.githubusercontent.com/kedeemaul/githubs/master/apidoc0.jpg) 
 
