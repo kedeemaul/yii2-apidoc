@@ -1,7 +1,7 @@
 <?php
 use yii\bootstrap\Tabs;
 use yii\helpers\Url;
-use ibunao\apidoc\widgets\SideNavWidget;
+use yii2docs\apidoc\widgets\SideNavWidget;
 
 // use frontend\assets\AppAsset;
 // AppAsset::register($this);
@@ -14,8 +14,8 @@ use ibunao\apidoc\widgets\SideNavWidget;
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<meta http-equiv="x-ua-compatible" content="ie=7" />
 	<?php $this->head() ?>
-	<link href="/css/document.css?v7" rel="stylesheet" type="text/css" />
-	<script src="/js/common/jquery.min.js" type="text/javascript"></script>
+	<link href="/vendor/kedeemaul/yii2-apidoc/source/css/document.css?v7" rel="stylesheet" type="text/css" />
+	<script src="/vendor/kedeemaul/yii2-apidoc/source/js/common/jquery.min.js" type="text/javascript"></script>
 	<title>API接口文档</title>
 </head>
 <body>
