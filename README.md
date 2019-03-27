@@ -6,25 +6,22 @@ yii2 通过API动作方法的注释，自动生成可阅读可调试的API文档
 composer require kedeemaul/yii2-apidoc
 ```
 ### 配置  
-#### 配置到模块数组  
-假设我们要放到 `backend` 项目下  
+#### 1、配置到模块数组  
+假设我们要放到 `backend` 项目下 
+config/main.php的modules数组中加入以下内容
+ 
 ```php
-'modules' => [
-    ...
-    ...
     'apidoc' => [
         'class' => 'yii2docs\apidoc\Module',
         # 配置访问接口的host
         'debugHost' => 'http://api.yiidoc.com',
         # 和配置时定义的模块名一致
         'moduleName' => 'apidoc',
-    ],
-    ...
-    ...
-],
+    ]
 ```
 <!-- more -->
-#### 配置需要接口文档的控制器    
+#### 2、配置需要接口文档的控制器    
+config/params.php加入以下内容
 
 ```php
 return [
@@ -40,9 +37,7 @@ return [
 	],
 ];
 ```
-#### 表和静态资源  
-将静态资源放到指定位置。相关文件放在 `vendor\kedeemaul\yii2-apidoc\source` 
-2. 以配在 `backend` 项目为例，把 `css` 和 `js` 文件夹放在 `backend\web` 下  
+
 
 
 ### 生成文档的备注格式   
