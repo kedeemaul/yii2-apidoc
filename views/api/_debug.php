@@ -3,7 +3,7 @@ use yii\helpers\Html;
 use yii\helpers\Url;
 ?>
 
-<script src="/vendor/kedeemaul/yii2-apidoc/source/js/common/jsbeautify.js" type="text/javascript"></script>
+<script src="/js/common/jsbeautify.js" type="text/javascript"></script>
 
 <div class="container-fluid" style="padding:0;">
 <div class="row">

@@ -12,12 +12,10 @@ config/main.php的modules数组配置如下
  
 ```php
 'modules' => [
-        'apidoc' => [
+        'docs' => [
             'class' => 'yii2docs\apidoc\Module',
-            # 配置访问接口的host  通常配置 frontend 项目的域名
-            'debugHost' => 'http://localhost:801',
             # 和配置时定义的模块名一致
-            'moduleName' => 'apidoc',
+            'moduleName' => 'docs',
         ]
     ]
 ```
@@ -27,19 +25,23 @@ config/params.php配置如下
 
 ```php
 return [
-	'apiList' => [
-		'test' => [
-			'label' => '文档测试',
-			'class' => 'api\controllers\ApidocController',
-		],
-		'test2' => [
-			'label' => '文档测试2',
-			'class' => 'api\controllers\Apidoc2Controller',
-		],
-	],
+    'apiList' => [
+        [
+            'label' => '文档测试2',//文档分组名称
+            'debugHost' => 'http://localhost:801',//调试api访问域名
+            'class' => 'apidoc\controllers\UserController',//class为api所在的控制器
+        ],
+        [
+            'label' => '文档测试',//文档分组名称
+            'debugHost' => 'http://localhost:802',//调试api访问域名
+            'class' => 'backend\controllers\ApiDocController',//class为api所在的控制器
+        ],
+    ],
 ];
 ```
-其中class为api所在的控制器
+#### 表和静态资源  
+将静态资源放到指定位置。相关文件放在 `vendor\kedeemaul\yii2-apidoc\source` 
+以配在 `backend` 项目为例，把 `css` 和 `js` 文件夹放在 `backend\web` 下  
 
 
 ### 生成文档的备注格式   

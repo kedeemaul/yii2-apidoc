@@ -35,6 +35,7 @@ class ApiController extends Controller
 		foreach ($configs as $config) {
 			$items = [];
 			$rf = new \ReflectionClass($config['class']);
+			$debugHost = $config['debugHost'];
 			# 获取公共方法
 			$methods = $rf->getMethods(\ReflectionMethod::IS_PUBLIC);
 			foreach ($methods as $method) {
@@ -53,7 +54,7 @@ class ApiController extends Controller
 						$currentAction = $actionModel;
 						$debugRoute = $actionModel->getRoute();
 
-						$debugUrl = $this->module->debugHost . '/' . $debugRoute;
+						$debugUrl = $debugHost . '/' . $debugRoute;
 					
 						$active = true;
 					}

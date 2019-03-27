@@ -11,7 +11,7 @@ AppAsset::register($this);
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<meta http-equiv="x-ua-compatible" content="ie=7" />
 	<?php $this->head() ?>
-	<link href="/vendor/kedeemaul/yii2-apidoc/source/css/document.css" rel="stylesheet" type="text/css" />
+	<link href="/css/document.css" rel="stylesheet" type="text/css" />
 </head>
 <body style="padding-left:20px;">
 	<?php $this->beginBody(); ?>
