@@ -82,7 +82,27 @@ public function actionRegGetCode($phone)
 {
 }
 ```
- 
+#### 配置phpstorm注释模版 
+
+```php
+/**
+* @name 动作方法名称
+* @uses 方法用途说明
+* @method get
+* @author ${DEVUSER}
+* @create ${DATE} ${TIME}
+* @request 参数名以*号开头表示必填
+ ${PARAM_DOC}
+* @param 类型 参数名 参数说明
+ #if (${TYPE_HINT} != "void")
+* @response ${TYPE_HINT} 返回JSON结构体，具体键值如下
+* @return int status 状态码：1正常，0错误
+* @return string msg 提示消息内容
+* @return array data 返回消息体数组
+#end
+${THROWS_DOC}
+ */
+```
 
 ### 示例  
 
